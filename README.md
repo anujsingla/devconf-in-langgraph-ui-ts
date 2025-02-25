@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+\# DevConf India - LangGraph Agentic AI Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the **frontend** for the **Agentic AI Example** showcased at **DevConf India**. It is built using **React**, **Vite**, and **PatternFly** components, specifically the **PatternFly Chatbot** for an interactive chatbot interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **PatternFly Chatbot** for user interactions
+- **React & Vite** for a fast, modern frontend
+- **Axios** for API communication with the backend
+- **React Router** for navigation
+- **Lodash & UUID** for utility functions
 
-## Expanding the ESLint configuration
+## 🛠️ Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- **Node.js** (v18+ recommended)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Setup
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/your-repo/devconf-in-langgraph-ui-ts.git
+   cd devconf-in-langgraph-ui-ts
+   ```
+2. **Install dependencies**:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```sh
+   npm install
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. **Run the development server**:
+   ```sh
+   npm run dev
+   ```
+
+## 🎨 UI Components
+
+This frontend heavily utilizes **PatternFly**. The chatbot UI is powered by:
+
+- **PatternFly Chatbot (`@patternfly/chatbot`)**
+- **PatternFly Core Components (`@patternfly/react-core`)**
+- **PatternFly Icons (`@patternfly/react-icons`)**
+
+## 📡 API Integration
+
+The frontend communicates with the backend using **Axios**:
+
+- **Google Search Tool** → Fetches real-time web-based results
+- **ArXiv Search Tool** → Retrieves academic papers
+
+## 🌟 Backend Repository
+
+The backend for this project is maintained separately. You can find it at:
+📌 **[Backend Repository](https://github.com/anujsingla/devconf-in-langgraph)**
+
+---
+
+Made with ❤️ for DevConf India!
